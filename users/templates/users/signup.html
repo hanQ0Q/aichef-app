@@ -1,0 +1,18 @@
+{% extends "users/layout.html" %}
+
+{% block body %}
+    {% if message %}
+        <div>{{ message }}</div>
+    {% endif %}
+
+    <form action="{% url 'signup' %}" method="post">
+        {% csrf_token %}
+        <input type="email" name="email" placeholder="email">
+        <input type="tel" name="mobile" placeholder="phone number">
+        <input type="text" name="first_name" placeholder="first name">
+        <input type="text" name="last_name" placeholder="last name">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" value="Signup">
+    </form>
+
+{% endblock %}
