@@ -5,7 +5,7 @@
         <div>{{ message }}</div>
     {% endif %}
 
-    <form action="{% url 'login' %}" method="post" id="myForm">
+    <form action="{% url 'users:login' %}" method="post" id="myForm">
         {% csrf_token %}
         <fieldset>
             <legend>Welcome! Please login!</legend>

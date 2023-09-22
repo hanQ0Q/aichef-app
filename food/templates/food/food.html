@@ -3,26 +3,35 @@
 {% block body %}
 
     <h1>Food Items</h1>
-  <!-- Dropdown list of categories -->
-<select id="categoryDropdown" onchange="updateItems()">
-    <option value="0">--Select a Category--</option>
-    {% for category in foods.keys %}
-    <option value="{{category}}">{{category}}</option>
-    {% endfor %}
+<form action="{% url 'food:add'%}" method="post">
+    {% csrf_token %}
+    <!-- Dropdown list of categories -->
+    <select id="categoryDropdown" onchange="updateItems()">
+        <option value="0">--Select a Category--</option>
+        {% for category in foods.keys %}
+        <option value="{{category}}">{{category}}</option>
+        {% endfor %}
 
-</select>
+    </select>
 
-<!-- Dropdown list of items, initially empty -->
-<select id="itemDropdown">
-    <!-- <option value="0">--Select an Item--</option> -->
-</select>
+    <!-- Dropdown list of items, initially empty -->
+    <select id="itemDropdown" name="selectedItem">
+        <!-- <option value="0">--Select an Item--</option> -->
+    </select>
 
     <!-- Button to add selected item to the list -->
-    <button onclick="addItem()">Add Item</button>
-    
-    <!-- List to display added items -->
-    <ul id="itemList"></ul>
+    <button type="submit">Add Item</button>
+</form>
+<!-- List to display added items -->
+<ul id="itemList">
+    {% for item in user_foods %}
+    <li>{{item.item.name}}</li>
+    {% endfor %}
+</ul>
+
 >
+
+
 <!-- to create a script tag with application/json to be used by javascript -->
 {{ foods|json_script:"dataVar" }}
 
