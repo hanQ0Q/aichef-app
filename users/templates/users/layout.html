@@ -5,10 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Users</title>
-    <link href="{% static 'users/styles.css' %}" rel="stylesheet" >
+    <title>AI-Chef</title>
+    <link href="{% static 'css/normalize.css' %}" rel="stylesheet" >
+    <link href="{% static 'users/style.css' %}" rel="stylesheet" >
 </head>
 <body>
+    <header>
+        <img src="{% static 'images/logo.png' %}" alt="logo" id="logo">
+        <h1>AI Chef</h1>
+    </header>
     {% block body %}
     {% endblock %}
 </body>

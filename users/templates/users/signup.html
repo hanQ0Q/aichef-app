@@ -7,12 +7,21 @@
 
     <form action="{% url 'signup' %}" method="post">
         {% csrf_token %}
-        <input type="email" name="email" placeholder="email">
-        <input type="tel" name="mobile" placeholder="phone number">
-        <input type="text" name="first_name" placeholder="first name">
-        <input type="text" name="last_name" placeholder="last name">
-        <input type="password" name="password" placeholder="Password">
-        <input type="submit" value="Signup">
+        <fieldset>
+            <legend>Sign Up for An New Account: </legend>
+            <label for="email">Email: </label>
+            <input type="email" name="email" placeholder="email">
+            <label for="tel">Phone Number: </label>
+            <input type="tel" name="mobile" placeholder="phone number">
+            <label for="first_name">First Name: </label>
+            <input type="text" name="first_name" placeholder="first name">
+            <label for="last_name">Last Name: </label>
+            <input type="text" name="last_name" placeholder="last name">
+            <label for="password">Password: </label>
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" value="Signup">
+        </fieldset>
+       
     </form>
 
 {% endblock %}

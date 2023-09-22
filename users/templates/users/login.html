@@ -5,11 +5,15 @@
         <div>{{ message }}</div>
     {% endif %}
 
-    <form action="{% url 'login' %}" method="post">
+    <form action="{% url 'login' %}" method="post" id="myForm">
         {% csrf_token %}
-        <input type="text" name="username" placeholder="username">
-        <input type="password" name="password" placeholder="Password">
-        <input type="submit" value="Login">
+        <fieldset>
+            <legend>Welcome! Please login!</legend>
+            <label for="name">User Name: </label>
+            <input type="text" name="username" placeholder="username">
+            <label for="password">Password: </label>
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" value="Login" id="submit">
     </form>
 
 {% endblock %}

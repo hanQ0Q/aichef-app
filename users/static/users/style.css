@@ -1,0 +1,55 @@
+body, html {
+    height: 100%;       /* Ensure full height */
+    margin: 0;          /* Remove default margin */
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    flex-direction: column;  /* Stack children vertically */
+    font: normal normal normal 12px/1.5 Georgia, sans-serif;
+}
+
+form input {
+    display:block;
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+#logo {
+    width: 5%;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+#myForm fieldset {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size:medium;
+    margin-top: 15px;
+    background-color:wheat;
+}
+
+fieldset legend {
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+
+#submit {
+    padding: 5px;
+    margin-top: 2px;
+    background-color: black; 
+    color: gold;
+    border: 1px white solid;
+    border-radius: 10%;
+    width:20%;
+    display: inline-block;
+    align-items: end;
+}
+
+#submit:hover {
+    background-color: green; 
+}
