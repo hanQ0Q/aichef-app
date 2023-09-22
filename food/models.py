@@ -11,9 +11,11 @@ class FoodCategory(models.Model):
         return f"{self.id} - {self.name}"
     
 class FoodItem(models.Model):
+    GENERIC = "GEN"
+    CUSTOM = "CUS"
     FOOD_TYPE_CHOICES = (
-        ("GEN", "generic"),
-        ("CUS", "custom"),
+        (GENERIC, "generic"),
+        (CUSTOM, "custom"),
     )
     name = models.CharField(max_length=100, blank=True, null=True, verbose_name="name")
     category = models.ForeignKey(FoodCategory, null=True, blank=True, related_name="food_items", on_delete=models.CASCADE,verbose_name="category")

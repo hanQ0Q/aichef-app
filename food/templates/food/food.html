@@ -1,0 +1,32 @@
+{% extends "food/layout.html" %}
+
+{% block body %}
+
+    <h1>Food Items</h1>
+  <!-- Dropdown list of categories -->
+<select id="categoryDropdown" onchange="updateItems()">
+    <option value="0">--Select a Category--</option>
+    {% for category in foods.keys %}
+    <option value="{{category}}">{{category}}</option>
+    {% endfor %}
+
+</select>
+
+<!-- Dropdown list of items, initially empty -->
+<select id="itemDropdown">
+    <!-- <option value="0">--Select an Item--</option> -->
+</select>
+
+    <!-- Button to add selected item to the list -->
+    <button onclick="addItem()">Add Item</button>
+    
+    <!-- List to display added items -->
+    <ul id="itemList"></ul>
+>
+<!-- to create a script tag with application/json to be used by javascript -->
+{{ foods|json_script:"dataVar" }}
+
+
+
+{% endblock %}
+
