@@ -11,9 +11,16 @@
     <form action="{% url 'recipes:create-recipe' %}" method="post">
         {% csrf_token %}
         {% for key, value in recipe.items %}
-            <textarea type="text" name={{ key }} > {{ value }}</textarea>
+
+            <textarea type="text" name={{ key }} style="display:none;"> {{ value }}</textarea>
         {% endfor %}
 
         <button type="submit">Save</button>
     </form>
+
+    <form action="{% url 'recipes:index' %}" method="get">
+        <input type="submit" value="Go to Recipes">
+    </form>
+
+
 {% endblock %}

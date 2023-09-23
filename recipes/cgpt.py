@@ -1,8 +1,9 @@
 import openai
+import logging
 
 from django.conf import settings
 
-
+logger = logging.getLogger("aichef")
 def get_recipe(ingredients):
     try:
         openai.api_key = settings.OPEN_AI_KEY
@@ -15,7 +16,7 @@ def get_recipe(ingredients):
         )
         return response.choices[0].text
     except openai.error.RateLimitError:
-        print(f"Recharge your account: {openai.error.RateLimitError.user_message}")
+        logger.error(f"Recharge your account: {openai.error.RateLimitError.user_message}")
 
 
 def get_separate_recipe(res: str):

@@ -2,16 +2,20 @@ from django.db import models
 from users.models import User
 from django.utils import timezone
 
+
 # Create your models here.
 class Recipe(models.Model):
+    BREAKFAST = "BR"
+    LUNCH = "LC"
+    DINNER = "DN"
     MEAL_TYPE_CHOICES = (
-        ("BR", "breakfast"),
-        ("LC", "lunch"),
-        ("DN", "dinner"),
+        (BREAKFAST, "breakfast"),
+        (LUNCH, "lunch"),
+        (DINNER, "dinner"),
     )
 
     name = models.CharField(max_length=100, blank=True, null=True, verbose_name="name")
-    recipe_date = models.DateField(verbose_name="date", default=timezone.now())
+    recipe_date = models.DateField(verbose_name="date", auto_now=True)
     calorie = models.PositiveIntegerField( blank=True, null=True, verbose_name="calorie")
     protein = models.PositiveIntegerField( blank=True, null=True, verbose_name="protein")
     meal_type = models.CharField(max_length=4, choices=MEAL_TYPE_CHOICES, blank=True, null=True, verbose_name="meal type")
