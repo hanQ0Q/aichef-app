@@ -25,7 +25,7 @@
 <!-- List to display added items -->
 <ul id="itemList">
     {% for item in user_foods %}
-    <li>{{item.item.name}}</li>
+    <li>{{item.item.name}}  [ <a href="{% url 'food:delete' item.item.id %}">Remove</a>]</li>
     {% endfor %}
 </ul>
 

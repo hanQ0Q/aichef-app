@@ -1,13 +1,7 @@
 {% extends "recipes/layout.html" %}
 
 {% block body %}
-    <h1>Recipes</h1>
     <h1>Saved Recipes</h1>
-    <ul>
-        <p>This is recipes user saved</p>
-
-{#            <p>{{ recipe.recipe_date }}</p>#}
-{#            <p>{{ recipe.instruction|linebreaks }} </p>#}
 
             <table>
                 <!-- Table header -->
@@ -31,7 +25,7 @@
                 </tbody>
             </table>
 
-    </ul>
+  
     <p> <a href="{% url 'recipes:create-recipe' %}">Create New Recipe</a></p>
 
 <style>

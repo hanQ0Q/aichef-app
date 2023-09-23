@@ -4,12 +4,20 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 
 from .models import User
+from recipes.models import Recipe
+from food.models import UserFoodItem
 # Create your views here.
 
 def index(request):
     if not request.user.is_authenticated:
         return HttpResponseRedirect(reverse("users:login"))
-    return render(request, "users/user.html")
+    recipes = Recipe.objects.filter(user=request.user).order_by('-recipe_date')[:3]
+    user_foods = UserFoodItem.objects.filter(user=request.user)
+    context = {
+        "recipes": recipes,
+        'user_foods': user_foods,
+    }
+    return render(request, "users/user.html", context=context)
 
 def signup_view(request):
     if request.method == "GET":
