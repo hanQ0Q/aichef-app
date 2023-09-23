@@ -1,0 +1,1182 @@
+[
+  {
+    "model": "food.foodcategory",
+    "pk": 1,
+    "fields": {
+      "name": "Dairy"
+    }
+  },
+  {
+    "model": "food.foodcategory",
+    "pk": 2,
+    "fields": {
+      "name": "Bakery"
+    }
+  },
+  {
+    "model": "food.foodcategory",
+    "pk": 3,
+    "fields": {
+      "name": "Meat & Poultry"
+    }
+  },
+  {
+    "model": "food.foodcategory",
+    "pk": 4,
+    "fields": {
+      "name": "Seafood"
+    }
+  },
+  {
+    "model": "food.foodcategory",
+    "pk": 5,
+    "fields": {
+      "name": "Produce"
+    }
+  },
+  {
+    "model": "food.foodcategory",
+    "pk": 6,
+    "fields": {
+      "name": "Dry & Canned Goods"
+    }
+  },
+  {
+    "model": "food.foodcategory",
+    "pk": 7,
+    "fields": {
+      "name": "Beverages"
+    }
+  },
+  {
+    "model": "food.foodcategory",
+    "pk": 8,
+    "fields": {
+      "name": "Juices"
+    }
+  },
+  {
+    "model": "food.foodcategory",
+    "pk": 9,
+    "fields": {
+      "name": "Snacks & Sweets"
+    }
+  },
+  {
+    "model": "food.foodcategory",
+    "pk": 10,
+    "fields": {
+      "name": "Condiments & Spices"
+    }
+  },
+  {
+    "model": "food.foodcategory",
+    "pk": 11,
+    "fields": {
+      "name": "Freezer Items"
+    }
+  },
+  {
+    "model": "food.foodcategory",
+    "pk": 12,
+    "fields": {
+      "name": "Frozen Fruits"
+    }
+  },
+  {
+    "model": "food.foodcategory",
+    "pk": 13,
+    "fields": {
+      "name": "Grains & Cereals"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 1,
+    "fields": {
+      "name": "Milk Whole",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 2,
+    "fields": {
+      "name": "Milk 2%",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 3,
+    "fields": {
+      "name": "Milk Skim",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 4,
+    "fields": {
+      "name": "Milk Lactose-free",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 5,
+    "fields": {
+      "name": "Yogurt Plain",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 6,
+    "fields": {
+      "name": "Yogurt Greek",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 7,
+    "fields": {
+      "name": "Yogurt Flavored",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 8,
+    "fields": {
+      "name": "Cheese Cheddar",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 9,
+    "fields": {
+      "name": "Cheese Mozzarella",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 10,
+    "fields": {
+      "name": "Cheese Feta",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 11,
+    "fields": {
+      "name": "Cheese Swiss",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 12,
+    "fields": {
+      "name": "Cheese Brie",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 13,
+    "fields": {
+      "name": "Butter",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 14,
+    "fields": {
+      "name": "Cream Whipping",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 15,
+    "fields": {
+      "name": "Cream Half-and-half",
+      "category": 1,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 16,
+    "fields": {
+      "name": "Bread Whole wheat",
+      "category": 2,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 17,
+    "fields": {
+      "name": "Bread White",
+      "category": 2,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 18,
+    "fields": {
+      "name": "Bread Rye",
+      "category": 2,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 19,
+    "fields": {
+      "name": "Bread Multigrain",
+      "category": 2,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 20,
+    "fields": {
+      "name": "Bagels",
+      "category": 2,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 21,
+    "fields": {
+      "name": "English muffins",
+      "category": 2,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 22,
+    "fields": {
+      "name": "Tortillas",
+      "category": 2,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 23,
+    "fields": {
+      "name": "Pastries Croissants",
+      "category": 2,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 24,
+    "fields": {
+      "name": "Pastries Danishes",
+      "category": 2,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 25,
+    "fields": {
+      "name": "Chicken Breast",
+      "category": 3,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 26,
+    "fields": {
+      "name": "Chicken Thigh",
+      "category": 3,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 27,
+    "fields": {
+      "name": "Chicken Drumstick",
+      "category": 3,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 28,
+    "fields": {
+      "name": "Beef Steaks",
+      "category": 3,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 29,
+    "fields": {
+      "name": "Beef Ground",
+      "category": 3,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 30,
+    "fields": {
+      "name": "Pork Chops",
+      "category": 3,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 31,
+    "fields": {
+      "name": "Pork Bacon",
+      "category": 3,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 32,
+    "fields": {
+      "name": "Pork Sausages",
+      "category": 3,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 33,
+    "fields": {
+      "name": "Turkey Whole",
+      "category": 3,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 34,
+    "fields": {
+      "name": "Turkey Ground",
+      "category": 3,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 35,
+    "fields": {
+      "name": "Cold cuts Ham",
+      "category": 3,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 36,
+    "fields": {
+      "name": "Cold cuts Roast beef",
+      "category": 3,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 37,
+    "fields": {
+      "name": "Cold cuts Turkey slices",
+      "category": 3,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 38,
+    "fields": {
+      "name": "Salmon",
+      "category": 4,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 39,
+    "fields": {
+      "name": "Tuna Canned",
+      "category": 4,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 40,
+    "fields": {
+      "name": "Tuna Fresh",
+      "category": 4,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 41,
+    "fields": {
+      "name": "Shrimp",
+      "category": 4,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 42,
+    "fields": {
+      "name": "Cod",
+      "category": 4,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 43,
+    "fields": {
+      "name": "Mussels",
+      "category": 4,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 44,
+    "fields": {
+      "name": "Clams",
+      "category": 4,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 45,
+    "fields": {
+      "name": "Vegetable Carrots",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 46,
+    "fields": {
+      "name": "Vegetable Broccoli",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 47,
+    "fields": {
+      "name": "Vegetable Bell peppers",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 48,
+    "fields": {
+      "name": "Vegetable Tomatoes",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 49,
+    "fields": {
+      "name": "Vegetable Lettuce",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 50,
+    "fields": {
+      "name": "Vegetable Spinach",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 51,
+    "fields": {
+      "name": "Vegetable Potatoes",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 52,
+    "fields": {
+      "name": "Vegetable Onions",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 53,
+    "fields": {
+      "name": "Vegetable Garlic",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 54,
+    "fields": {
+      "name": "Fruit Apples",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 55,
+    "fields": {
+      "name": "Fruit Bananas",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 56,
+    "fields": {
+      "name": "Fruit Oranges",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 57,
+    "fields": {
+      "name": "Fruit Berries",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 58,
+    "fields": {
+      "name": "Fruit Grapes",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 59,
+    "fields": {
+      "name": "Fruit Pears",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 60,
+    "fields": {
+      "name": "Herbs Parsley",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 61,
+    "fields": {
+      "name": "Herbs Cilantro",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 62,
+    "fields": {
+      "name": "Herbs Basil",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 63,
+    "fields": {
+      "name": "Herbs Rosemary",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 64,
+    "fields": {
+      "name": "Herbs Thyme",
+      "category": 5,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 65,
+    "fields": {
+      "name": "Rice White",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 66,
+    "fields": {
+      "name": "Rice Brown",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 67,
+    "fields": {
+      "name": "Rice Wild",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 68,
+    "fields": {
+      "name": "Pasta Spaghetti",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 69,
+    "fields": {
+      "name": "Pasta Macaroni",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 70,
+    "fields": {
+      "name": "Pasta Penne",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 71,
+    "fields": {
+      "name": "Canned vegetable Corn",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 72,
+    "fields": {
+      "name": "Canned vegetable Peas",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 73,
+    "fields": {
+      "name": "Canned vegetable Green beans",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 74,
+    "fields": {
+      "name": "Canned fruit Pineapple",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 75,
+    "fields": {
+      "name": "Canned fruit Peaches",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 76,
+    "fields": {
+      "name": "Canned fruit Pears",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 77,
+    "fields": {
+      "name": "Beans Black beans",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 78,
+    "fields": {
+      "name": "Beans Kidney beans",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 79,
+    "fields": {
+      "name": "Beans Chickpeas",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 80,
+    "fields": {
+      "name": "Soups",
+      "category": 6,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 81,
+    "fields": {
+      "name": "Coffee",
+      "category": 7,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 82,
+    "fields": {
+      "name": "Tea Black",
+      "category": 7,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 83,
+    "fields": {
+      "name": "Tea Green",
+      "category": 7,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 84,
+    "fields": {
+      "name": "Tea Herbal",
+      "category": 7,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 85,
+    "fields": {
+      "name": "Soda",
+      "category": 7,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 86,
+    "fields": {
+      "name": "Water",
+      "category": 7,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 87,
+    "fields": {
+      "name": "Orange",
+      "category": 8,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 88,
+    "fields": {
+      "name": "Apple",
+      "category": 8,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 89,
+    "fields": {
+      "name": "Cranberry",
+      "category": 8,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 90,
+    "fields": {
+      "name": "Grape",
+      "category": 8,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 91,
+    "fields": {
+      "name": "Potato chips",
+      "category": 9,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 92,
+    "fields": {
+      "name": "Crackers",
+      "category": 9,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 93,
+    "fields": {
+      "name": "Cookies",
+      "category": 9,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 94,
+    "fields": {
+      "name": "Chocolates",
+      "category": 9,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 95,
+    "fields": {
+      "name": "Ice cream",
+      "category": 9,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 96,
+    "fields": {
+      "name": "Ketchup",
+      "category": 10,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 97,
+    "fields": {
+      "name": "Mustard",
+      "category": 10,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 98,
+    "fields": {
+      "name": "Mayonnaise",
+      "category": 10,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 99,
+    "fields": {
+      "name": "Salt",
+      "category": 10,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 100,
+    "fields": {
+      "name": "Pepper",
+      "category": 10,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 101,
+    "fields": {
+      "name": "Vinegar",
+      "category": 10,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 102,
+    "fields": {
+      "name": "Soy sauce",
+      "category": 10,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 103,
+    "fields": {
+      "name": "Maple syrup",
+      "category": 10,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 104,
+    "fields": {
+      "name": "Honey",
+      "category": 10,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 105,
+    "fields": {
+      "name": "Frozen vegetable Peas",
+      "category": 11,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 106,
+    "fields": {
+      "name": "Frozen vegetable Mixed veggies",
+      "category": 11,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 107,
+    "fields": {
+      "name": "Frozen vegetable Spinach",
+      "category": 11,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 108,
+    "fields": {
+      "name": "Frozen pizzas",
+      "category": 11,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 109,
+    "fields": {
+      "name": "Frozen dinners",
+      "category": 11,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 110,
+    "fields": {
+      "name": "Berries Strawberries",
+      "category": 12,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 111,
+    "fields": {
+      "name": "Berries Blueberries",
+      "category": 12,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 112,
+    "fields": {
+      "name": "Berries Raspberries",
+      "category": 12,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 113,
+    "fields": {
+      "name": "Mangoes",
+      "category": 12,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 114,
+    "fields": {
+      "name": "Pineapples",
+      "category": 12,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 115,
+    "fields": {
+      "name": "Cherries",
+      "category": 12,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 116,
+    "fields": {
+      "name": "Oatmeal",
+      "category": 13,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 117,
+    "fields": {
+      "name": "Cereal Cornflakes",
+      "category": 13,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 118,
+    "fields": {
+      "name": "Cereal Granola",
+      "category": 13,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 119,
+    "fields": {
+      "name": "Cereal Bran flakes",
+      "category": 13,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 120,
+    "fields": {
+      "name": "Quinoa",
+      "category": 13,
+      "food_type": "GEN"
+    }
+  },
+  {
+    "model": "food.fooditem",
+    "pk": 121,
+    "fields": {
+      "name": "Barley",
+      "category": 13,
+      "food_type": "GEN"
+    }
+  }
+]
