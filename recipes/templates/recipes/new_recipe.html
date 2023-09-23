@@ -1,0 +1,19 @@
+{% extends "recipes/layout.html" %}
+
+{% block body %}
+    <h1>New Recipe</h1>
+
+    {% for key, value in recipe.items %}
+        <h3>{{ key }}</h3>
+        <p>{{ value|linebreaks }}</p>
+    {% endfor %}
+
+    <form action="{% url 'recipes:create-recipe' %}" method="post">
+        {% csrf_token %}
+        {% for key, value in recipe.items %}
+            <textarea type="text" name={{ key }} > {{ value }}</textarea>
+        {% endfor %}
+
+        <button type="submit">Save</button>
+    </form>
+{% endblock %}

@@ -1,8 +1,40 @@
 {% extends "recipes/layout.html" %}
 
 {% block body %}
-    <h1>Recipes</h1>
+    <h1>Saved Recipes</h1>
     <ul>
-        <p>This is recipes user saved</p>
+
+{#            <p>{{ recipe.recipe_date }}</p>#}
+{#            <p>{{ recipe.instruction|linebreaks }} </p>#}
+
+            <table>
+                <!-- Table header -->
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Meal Type</th>
+                        <th>Instructions</th>
+                    </tr>
+                </thead>
+
+                <!-- Table body -->
+                <tbody>
+                    {% for recipe in recipes %}
+                        <tr>
+                            <td>{{ recipe.recipe_date }}</td>
+                            <td>{{ recipe.get_meal_type_display|capfirst }}</td>
+                            <td>{{ recipe.instruction|linebreaks }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
     </ul>
+    <p> <a href="{% url 'recipes:create-recipe' %}">Create New Recipe</a></p>
+
+<style>
+table, td, th {
+    border: 1px solid lightslategray;
+}
+</style>
 {% endblock %}

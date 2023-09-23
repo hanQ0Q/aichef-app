@@ -7,7 +7,7 @@ from django.urls import reverse
 # Create your views here.
 def index(request):
     if not request.user.is_authenticated:
-        return HttpResponseRedirect(reverse("login"))
+        return HttpResponseRedirect(reverse("users:login"))
 
 
     food_category = FoodCategory.objects.all()
