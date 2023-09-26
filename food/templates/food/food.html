@@ -35,6 +35,8 @@
 <!-- to create a script tag with application/json to be used by javascript -->
 {{ foods|json_script:"dataVar" }}
 
+<button><a href="{% url 'recipes:create-recipe' %}">Create New Recipe</a></button>
+
 
 
 {% endblock %}

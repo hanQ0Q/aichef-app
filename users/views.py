@@ -42,7 +42,7 @@ def signup_view(request):
                                         ) 
         user.save()
         return render(request, "users/login.html", {
-                "message":"Account created. Please use your email and password to log in."
+                "message":"🎉🎉🎉 Congratulations! Your account created! Now you use your email and password to log in."
             })
 
 def login_view(request):

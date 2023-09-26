@@ -12,17 +12,18 @@
 <body>
     <header>
         <img src="{% static 'images/logo.png' %}" alt="logo" id="logo">
-        <h1 id="logo1">AI Chef</h1>
+        <h1>AI Chef</h1>
     </header>
     <nav>
         <a href="{% url 'users:login' %}">Login</a>
         <a href="{% url 'users:logout' %}">Logout</a>
         <a href="{% url 'food:index' %}">Add Food</a>
         <a href="{% url 'recipes:index' %}">All Recipes</a>
-        <a href="{% url 'recipes:create-recipe' %}">Create New Recipe</a>
     </nav>
     <main>
-        <h1>Recent Created Recipes</h1>
+        <h2>Recent Created Recipes</h2>
+
+        <p id="add">To create recipe, Please add food you have first! <a href="{% url 'food:index' %}">Select Food</a></p>
 
         <table>
             <!-- Table header -->
@@ -59,13 +60,13 @@ border: 1px solid lightslategray;
 
 
     <aside>
-        <h1>Welcome, {{ request.user.first_name }}</h1>
+        <h2>Welcome, {{ request.user.first_name }}</h2>
 
         <ul>
             <li>Username: {{ request.user.username }}</li>
             <li>Email: {{ request.user.email }}</li>
         </ul><br>
-        <h2>My Food List</h2>
+        <h3>My Food List</h3>
         <ul id="itemList">
             {% for item in user_foods %}
             <li>{{item.item.name}}</li>

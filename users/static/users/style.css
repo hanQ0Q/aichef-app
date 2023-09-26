@@ -1,6 +1,7 @@
 body, html {
     height: 100%;       /* Ensure full height */
     margin: 5px;          /* Remove default margin */
+    background-color: rgb(214, 245, 245);
 }
 
 body {
@@ -15,11 +16,28 @@ form input {
     display:block;
     margin-bottom: 10px;
     width: 95%;
+    border-radius: 7%;
+    border:darkkhaki solid 1px;
 }
 
+label {
+    color:seagreen;
+}
 
 #logo {
     display:inline-flexbox;
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#logo, h1 {
+    display: inline-block;
+    vertical-align: middle; /* Optional: This ensures that they are vertically aligned to each other. */
+}
+
+h1{
+    color:teal;
 }
 
 #myForm fieldset {
@@ -28,26 +46,39 @@ form input {
     margin-bottom: 15px;
     font-size:medium;
     margin-top: 15px;
-    background-color:wheat;
+    background-color:rgb(242, 242, 250);
+    border-radius: 10%;
+    border:darkkhaki solid 1px;
 }
 
 fieldset legend {
     font-size: larger;
     font-weight: bold;
     text-align: center;
+    color:seagreen;
 }
 
 #submit {
-    padding: 5px;
-    margin-top: 2px;
-    background-color: black; 
-    color: gold;
-    border: 1px white solid;
+    padding: 2px;
+    margin-top: 1px;
+    margin-right:10px;
+    margin-bottom: 0px;
+    background-color: lightgoldenrodyellow; 
+    color: seagreen;
+    border: 2px white solid;
     border-radius: 10%;
-    width:95%;
-    display: inline-block;
+    width:25%;
+    float:right;
+    font-weight: bold;
+    font-size:medium;
 }
 
 #submit:hover {
-    background-color: green; 
+    background-color: plum; 
+}
+
+.message {
+    font-size: large;
+    font-weight: bold;
+    color: teal;
 }
