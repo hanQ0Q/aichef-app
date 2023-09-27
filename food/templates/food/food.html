@@ -2,7 +2,7 @@
 
 {% block body %}
 
-    <h1>Food Items</h1>
+    <h1>Add Food to Your List:</h1>
 <form action="{% url 'food:add'%}" method="post">
     {% csrf_token %}
     <!-- Dropdown list of categories -->

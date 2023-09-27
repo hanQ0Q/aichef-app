@@ -15,12 +15,10 @@
             <textarea type="text" name={{ key }} style="display:none;"> {{ value }}</textarea>
         {% endfor %}
 
-        <button type="submit">Save</button>
-    </form>
+        <button type="submit">Save and Go to Recipes</button>
+    </form> <br>
 
-    <form action="{% url 'recipes:index' %}" method="get">
-        <input type="submit" value="Go to Recipes">
-    </form>
+    
 
 
 {% endblock %}

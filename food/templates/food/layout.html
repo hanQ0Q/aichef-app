@@ -10,7 +10,37 @@
     <script src="{% static 'food/food.js' %}"></script>  
 </head>
 <body>
-    {% block body %}
-    {% endblock %}
+    <header>
+        <img src="{% static 'images/logo.png' %}" alt="logo" id="logo">
+        <h1>AI Chef</h1>
+    </header>
+    <nav>
+        <a href="{% url 'users:index' %}">Home</a>
+        <a href="{% url 'food:index' %}">Add Food</a>
+        <a href="{% url 'recipes:index' %}">All Recipes</a>
+        <a href="{% url 'users:login' %}">Login</a>
+        <a href="{% url 'users:logout' %}">Logout</a>
+    </nav>
+    <main>
+        {% block body %}
+        {% endblock %}
+
+    </main>
+
+
+    <aside>
+        <h2>Welcome, {{ request.user.first_name }}</h2>
+
+        <h3>My Food List</h3>
+        <ul id="itemList">
+            {% for item in user_foods %}
+            <li>{{item.item.name}}</li>
+            {% endfor %}
+        </ul>
+   </aside>
+    
 </body>
 </html>
+
+
+

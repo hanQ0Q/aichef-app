@@ -12,6 +12,22 @@ body {
     font: normal normal normal 12px/1.5 Georgia, sans-serif;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header p {
+    max-width: 37%; /* adjust as needed */
+    margin: 1% 0; /* spacing between paragraphs */
+    color:rgb(100, 68, 173);
+    font-style: italic;
+    font-weight:540;
+    font-size:small;
+}
+
 form input {
     display:block;
     margin-bottom: 10px;

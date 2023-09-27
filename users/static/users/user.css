@@ -1,6 +1,7 @@
 body, html {
     margin: 0;
-    margin-left:20px;
+    margin-left:1%;
+    border:0;
     padding: 0;
 }
 body {
@@ -13,13 +14,14 @@ body {
 header, nav{
     width:100%;
     background-color: rgb(214, 245, 245);
+    padding-right:1%;
+    padding-left:1%;
 }
 
 #logo {
-    margin-left:15px;
+    margin-left:2%;
     display:inline-flexbox;
-    height:40px;
-    width: 40px;
+    width: 5%;
     border-radius: 50%;
 }
 

@@ -1,3 +1,4 @@
+
 {% load static %}
 
 <!DOCTYPE html>
@@ -6,10 +7,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
-    <link href="{% static 'recipes/styles.css' %}" rel="stylesheet" >
+    <link href="{% static 'recipes/style.css' %}" rel="stylesheet" >
 </head>
 <body>
-    {% block body %}
-    {% endblock %}
+    <header>
+        <img src="{% static 'images/logo.png' %}" alt="logo" id="logo">
+        <h1>AI Chef</h1>
+    </header>
+    <nav>
+        <a href="{% url 'users:index' %}">Home</a>
+        <a href="{% url 'food:index' %}">Add Food</a>
+        <a href="{% url 'recipes:index' %}">All Recipes</a>
+        <a href="{% url 'users:login' %}">Login</a>
+        <a href="{% url 'users:logout' %}">Logout</a>
+    </nav>
+    <main>
+        {% block body %}
+        {% endblock %}
+    </main>
+
+    
 </body>
 </html>
+
+
+
