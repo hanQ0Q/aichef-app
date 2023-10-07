@@ -8,6 +8,7 @@ class User(AbstractUser):
     email = models.EmailField(verbose_name="email")
     password = models.CharField(max_length=50, verbose_name="password")
     mobile = models.CharField(max_length=10)
+    is_guest = models.BooleanField(default=False, verbose_name="is guest")
 
 
     def __str__(self) -> str:

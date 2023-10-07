@@ -1,12 +1,19 @@
+import uuid
+import logging
+
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.contrib.auth import get_user_model, login
+
 
 from .models import User
 from recipes.models import Recipe
 from food.models import UserFoodItem
 # Create your views here.
+
+logger = logging.getLogger('aichef')
 
 def index(request):
     if not request.user.is_authenticated:
@@ -64,4 +71,16 @@ def logout_view(request):
     logout(request)
     return render(request, "users/login.html", {
         "message": "Logged out."
-    })
+    })  
+
+def guest_login(request):
+    if request.user.is_authenticated:
+        return HttpResponseRedirect(reverse("users:index"))
+
+    user = get_user_model().objects.create(username=uuid.uuid4(), is_guest=True, first_name="Guest", last_name="")
+    user.set_unusable_password()
+    user.save()
+    login(request, user)
+    logger.info(f"user: {request.user}")
+    return HttpResponseRedirect(reverse("users:index"))
+    
